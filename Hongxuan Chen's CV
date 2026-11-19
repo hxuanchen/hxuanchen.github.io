@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hongxuan Chen | Academic Homepage</title>
+<meta name="description" content="Academic homepage of Hongxuan Chen. Research on autonomous underwater vehicles, motion guidance and nonlinear control.">
+
+<style>
+:root {
+    --blue: #24558a;
+    --text: #292929;
+    --muted: #666;
+    --line: #e5e5e5;
+    --bg: #fff;
+    --width: 1050px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: var(--width);
+    margin: auto;
+    padding: 0 30px;
+}
+
+/* Navigation */
+header {
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    min-height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 45px 0 30px;
+}
+
+.profile-photo {
+    width: 175px;
+    height: 210px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+
+.profile-placeholder {
+    width: 175px;
+    height: 210px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf1f5;
+    color: #52657a;
+    font-size: 43px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 31px;
+    margin: 0 0 5px;
+    line-height: 1.4;
+}
+
+.position {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
+.affiliation {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+/* Sections */
+section {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+}
+
+h2 {
+    font-size: 21px;
+    color: var(--blue);
+    margin: 0 0 13px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+p {
+    margin: 7px 0;
+}
+
+ul {
+    padding-left: 23px;
+    margin: 8px 0;
+}
+
+li {
+    padding: 2px 0;
+}
+
+.date {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.publication {
+    margin-bottom: 17px;
+    padding-left: 18px;
+    text-indent: -18px;
+}
+
+.publication .venue {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 22px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .profile {
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .profile-photo,
+    .profile-placeholder {
+        width: 130px;
+        height: 155px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <a class="logo" href="#">Hongxuan Chen</a>
+
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Profile -->
+    <div class="profile" id="about">
+
+        <!-- Replace this placeholder with your own photo if desired -->
+        <div class="profile-placeholder">HC</div>
+
+        <div>
+            <h1>Hongxuan Chen</h1>
+
+            <div class="position">
+                Postdoctoral Fellow
+            </div>
+
+            <div class="affiliation">
+                School of Data Science<br>
+                The Chinese University of Hong Kong, Shenzhen<br>
+                Shenzhen, Guangdong, China
+            </div>
+
+            <div class="social">
+                <a href="mailto:hxuanchen@cuhk.edu.cn">Email</a>
+                <a href="https://github.com/hxuanchen">GitHub</a>
+                <a href="YOUR_GOOGLE_SCHOLAR_URL">Google Scholar</a>
+                <a href="YOUR_ORCID_URL">ORCID</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About -->
+    <section>
+        <h2>About Me</h2>
+
+        <p>
+            I am a Postdoctoral Fellow at the School of Data Science,
+            The Chinese University of Hong Kong, Shenzhen.
+            I received my doctoral training in Naval Architecture
+            and Ocean Engineering at Huazhong University of Science
+            and Technology (HUST).
+        </p>
+
+        <p>
+            My research focuses on autonomous underwater vehicles,
+            nonlinear control, motion guidance, and fault-tolerant
+            control. I am particularly interested in developing
+            theoretically rigorous methods for trajectory tracking
+            and autonomous motion generation of underactuated
+            robotic systems.
+        </p>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+        <h2>Research Interests</h2>
+
+        <ul>
+            <li>Autonomous Underwater Vehicles (AUVs) and ROVs</li>
+            <li>Nonlinear and Robust Control</li>
+            <li>Velocity Guidance and Trajectory Tracking</li>
+            <li>Geometric Control on SO(3) and SE(3)</li>
+            <li>Fault-Tolerant and Adaptive Control</li>
+            <li>Capability-Aware Autonomous Motion Generation</li>
+        </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <h3>Huazhong University of Science and Technology</h3>
+        <div class="date">2022 – 2026</div>
+        <p>
+            Ph.D. in Naval Architecture and Ocean Engineering
+        </p>
+
+        <h3>Huazhong University of Science and Technology</h3>
+        <div class="date">Undergraduate study</div>
+        <p>
+            B.Eng. in Marine Engineering
+        </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+        <div class="date">2026 – Present</div>
+        <p>Postdoctoral Fellow, School of Data Science</p>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <h2>Selected Publications</h2>
+
+        <p class="date">
+            * denotes corresponding author. Full publication list
+            and bibliographic details are being updated.
+        </p>
+
+        <div class="publication">
+            <strong>
+                A novel velocity guidance law for 3-D trajectory
+                tracking of underactuated AUVs.
+            </strong>
+            <div class="venue">
+                <em>Automatica</em>, 2026. Accepted.
+            </div>
+        </div>
+
+        <!-- Add more publications here using the same format -->
+
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+        <h2>Awards and Honors</h2>
+
+        <ul>
+            <li>Doctoral National Scholarship</li>
+            <li>National Encouragement Scholarship</li>
+            <li>First-Class Academic Scholarship, HUST</li>
+        </ul>
+    </section>
+
+    <!-- Academic Services -->
+    <section id="services">
+        <h2>Academic Services</h2>
+
+        <p>
+            Reviewer for journals including Control Engineering
+            Practice, Ocean Engineering, ISA Transactions,
+            and other journals in control and robotics.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:hxuanchen@cuhk.edu.cn">
+                hxuanchen@cuhk.edu.cn
+            </a>
+        </p>
+
+        <p>
+            <strong>Affiliation:</strong><br>
+            School of Data Science,<br>
+            The Chinese University of Hong Kong, Shenzhen,<br>
+            Shenzhen, Guangdong, China.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Hongxuan Chen. All rights reserved.
+</footer>
+
+</body>
+</html>
