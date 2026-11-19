@@ -186,8 +186,8 @@ li { padding: 2px 0; }
 
 .publication {
     margin: 0 0 15px;
-    padding-left: 27px;
-    text-indent: -27px;
+    padding: 0;
+    text-indent: 0;
 }
 
 .publication:last-child { margin-bottom: 0; }
@@ -200,9 +200,10 @@ li { padding: 2px 0; }
     font-weight: 600;
 }
 
-.publication .venue {
-    color: var(--muted);
-    font-size: 14px;
+.publication {
+    margin: 0 0 15px;
+    padding: 0;
+    text-indent: 0;
 }
 
 .status {
@@ -436,53 +437,44 @@ footer {
    
 <section id="publications">
     <h2>Journal Publications</h2>
+
     <p class="note">First-author journal articles.</p>
 
-<div class="publication">
-    <strong>Chen H</strong>, Ye Z, Tang G, et al.
-    <a href="https://doi.org/10.1016/j.automatica.2026.113084">
-        A novel velocity guidance law for 3-D trajectory tracking of underactuated autonomous underwater vehicles: theory, simulations and experiments.
-    </a>
-    <span class="venue">
+    <p class="publication">
+        <strong>Chen H</strong>, Ye Z, Tang G, et al.
+        <a href="https://doi.org/10.1016/j.automatica.2026.113084">
+            A novel velocity guidance law for 3-D trajectory tracking of underactuated autonomous underwater vehicles: theory, simulations and experiments.
+        </a>
         <em>Automatica</em>, 2026, 190, 113084.
         <strong>(Regular Paper)</strong>
-    </span>
-</div>
+    </p>
 
-    <div class="publication">
+    <p class="publication">
         <strong>Chen H</strong>, Tang G, Xiao W, et al.
         K&infin; function-based robust sliding mode control for remotely operated vehicles: Theory, simulations, and experiments.
-        <div class="venue">
-            <em>Control Engineering Practice</em>, 2025, 156, 106230.
-        </div>
-    </div>
+        <em>Control Engineering Practice</em>, 2025, 156, 106230.
+    </p>
 
-    <div class="publication">
+    <p class="publication">
         <strong>Chen H</strong>, Tang G, Wang S, et al.
         Adaptive fixed-time backstepping control for three-dimensional trajectory tracking of underactuated autonomous underwater vehicles.
-        <div class="venue">
-            <em>Ocean Engineering</em>, 2023, 275, 114109.
-        </div>
-    </div>
+        <em>Ocean Engineering</em>, 2023, 275, 114109.
+    </p>
 
-    <div class="publication">
+    <p class="publication">
         <strong>Chen H</strong>, Tang G, Huang Y, et al.
         Adaptive model-parameter-free nonsingular fixed-time sliding mode control for underwater cleaning vehicle.
-        <div class="venue">
-            <em>Ocean Engineering</em>, 2022, 262, 112239.
-        </div>
-    </div>
+        <em>Ocean Engineering</em>, 2022, 262, 112239.
+    </p>
 
-    <div class="publication">
+    <p class="publication">
         <strong>Chen H</strong>, Ye Z, Tang G, et al.
         <a href="https://doi.org/10.1088/1361-6501/ae264d">
             NDO-SMC for trajectory tracking of AUVs with unmeasured states: experimental study.
         </a>
-        <div class="venue">
-            <em>Measurement Science and Technology</em>, 2026, 37(2), 026201.
-            <span class="note">First published online: December 2025.</span>
-        </div>
-    </div>
+        <em>Measurement Science and Technology</em>, 2026, 37(2), 026201.
+        First published online: December 2025.
+    </p>
 </section>
 
 
@@ -646,10 +638,16 @@ footer {
     <!-- Academic service -->
     <section id="services">
         <h2>Academic Services</h2>
-        <p>
-            Reviewer for journals including <em>Control Engineering Practice</em>,
-            <em>Ocean Engineering</em>, and <em>ISA Transactions</em>.
-        </p>
+            <p>
+                Reviewer for journals including
+                <em>IEEE Transactions on Intelligent Transportation Systems</em>,
+                <em>International Journal of Mechanical Sciences</em>.
+                <em>Control Engineering Practice</em>,
+                <em>Ocean Engineering</em>,
+                and <em>ISA Transactions</em>,
+
+                
+            </p>
     </section>
 
     <!-- Contact -->
