@@ -196,32 +196,20 @@ li {
     margin: 0 0 2px;
 }
 
-/* Underwater platform photo gallery */
-.platform-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+/* One combined image showing all underwater robotic platforms */
+.platform-overview {
     margin-top: 16px;
 }
 
-.platform-card {
-    max-width: 280px;
-}
-
-.platform-card img {
+.platform-overview img {
     display: block;
     width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background: #f7f8fa;
-    border: 1px solid var(--line);
+    max-width: 950px;
+    height: auto;
+    object-fit: initial;
+    border: 0;
     border-radius: 4px;
-}
-
-.platform-caption {
-    margin-top: 7px;
-    color: #444;
-    font-size: 14px;
+    background: transparent;
 }
 
 /* Footer */
@@ -260,22 +248,11 @@ footer {
         height: 155px;
         flex-basis: 130px;
     }
-
-    .platform-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-    }
-
-    h1 {
+h1 {
         font-size: 27px;
     }
 }
 
-@media (max-width: 460px) {
-    .platform-grid {
-        grid-template-columns: 1fr;
-    }
-}
 </style>
 </head>
 
@@ -551,14 +528,11 @@ footer {
             guidance, control, and fault-tolerant operation.
         </p>
 
-      <div class="platform-grid">
-    <div class="platform-card">
-        <img src="images/6.png"
-             alt="Underwater pool experiment"
-             loading="lazy">
-        <div class="platform-caption">Pool Experiment</div>
-    </div>
-</div>
+      <div class="platform-overview">
+            <img src="images/6.png"
+                 alt="Overview of underwater robotic platforms"
+                 loading="lazy">
+        </div>
     </section>
 
     <section id="services">
