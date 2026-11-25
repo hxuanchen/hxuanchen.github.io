@@ -5,271 +5,608 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Academic homepage of Hongxuan Chen, Postdoctoral Researcher at The Chinese University of Hong Kong, Shenzhen.">
 <title>Hongxuan Chen | Academic Homepage</title>
+
 <style>
-:root{--blue:#24558a;--text:#292929;--muted:#666;--line:#e5e5e5;--width:1050px}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--text);font:15px/1.7 Arial,Helvetica,sans-serif}
-a{color:var(--blue);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:var(--width);margin:0 auto;padding:0 28px}
-header{border-bottom:1px solid var(--line)}
-.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{color:var(--text);font-size:19px;font-weight:bold;white-space:nowrap}
-.nav-links{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:14px}
-.nav-links a{color:#444}
-.profile{display:flex;align-items:flex-start;gap:30px;padding:42px 0 30px}
-.profile-placeholder,.profile-photo{width:160px;height:190px;flex:0 0 160px;border:1px solid var(--line);border-radius:3px}
-.profile-placeholder{display:flex;align-items:center;justify-content:center;background:#edf1f5;color:#52657a;font-size:42px;font-weight:bold}
-.profile-photo{object-fit:cover;object-position:center}
-h1{margin:0 0 5px;font-size:30px;line-height:1.35}
-.position{margin-bottom:10px;font-size:16px;color:#444}
-.affiliation{color:var(--muted);font-size:14px;line-height:1.6}
-.social{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;font-size:14px}
-section{padding:22px 0;border-top:1px solid var(--line);scroll-margin-top:18px}
-h2{margin:0 0 12px;color:var(--blue);font-size:21px;line-height:1.4}
-h3{margin:16px 0 7px;font-size:16px;line-height:1.45}
-p{margin:7px 0}
-ul{margin:7px 0;padding-left:22px}
-li{padding:2px 0}
-.entry{margin-bottom:16px}
-.entry:last-child,.project:last-child{margin-bottom:0}
-.date,.note{color:var(--muted);font-size:14px}
-.publication{margin:0 0 14px}
-.publication:last-child{margin-bottom:0}
-.paper-title{font-weight:600}
-.pub-meta{display:inline;margin-top:2px;color:#555}
-.project{margin-bottom:18px}
-.project h3{margin:0 0 2px}
-footer{margin-top:18px;padding:20px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:13px}
-@media(max-width:720px){
-.container{padding:0 18px}
-.nav{align-items:flex-start;flex-direction:column;padding:14px 0}
-.nav-links{gap:9px 14px}
-.profile{flex-direction:column;gap:17px;padding-top:28px}
-.profile-placeholder,.profile-photo{width:130px;height:155px;flex-basis:155px}
-h1{font-size:27px}
+:root {
+    --blue: #24558a;
+    --text: #292929;
+    --muted: #666;
+    --line: #e5e5e5;
+    --width: 1050px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--text);
+    font: 15px/1.7 Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+/* Navigation */
+header {
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--text);
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #444;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 42px 0 30px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 190px;
+    flex: 0 0 160px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0 0 5px;
+    font-size: 30px;
+    line-height: 1.35;
+}
+
+.position {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.affiliation {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* General sections */
+section {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 18px;
+}
+
+h2 {
+    margin: 0 0 12px;
+    color: var(--blue);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+h3 {
+    margin: 16px 0 7px;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+p {
+    margin: 7px 0;
+}
+
+ul {
+    margin: 7px 0;
+    padding-left: 22px;
+}
+
+li {
+    padding: 2px 0;
+}
+
+.entry {
+    margin-bottom: 16px;
+}
+
+.entry:last-child,
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.date,
+.note {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Publications: keep title and journal information in one continuous paragraph */
+.publication {
+    margin: 0 0 14px;
+}
+
+.publication:last-child {
+    margin-bottom: 0;
+}
+
+.paper-title {
+    font-weight: normal;
+}
+
+.pub-meta {
+    display: inline;
+    margin: 0;
+    color: #555;
+}
+
+/* Research projects */
+.project {
+    margin-bottom: 18px;
+}
+
+.project h3 {
+    margin: 0 0 2px;
+}
+
+/* Underwater platform photo gallery */
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.platform-card {
+    min-width: 0;
+}
+
+.platform-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #f7f8fa;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+
+.platform-caption {
+    margin-top: 7px;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    margin-top: 18px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsive layout */
+@media (max-width: 720px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+    }
+
+    .nav-links {
+        gap: 9px 14px;
+    }
+
+    .profile {
+        gap: 17px;
+        padding-top: 28px;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 155px;
+        flex-basis: 130px;
+    }
+
+    .platform-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 460px) {
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
+
 <body>
 <header>
-<div class="container nav">
-<a class="logo" href="#">Hongxuan Chen</a>
-<nav class="nav-links" aria-label="Main navigation">
-<a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a>
-<a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
-</nav>
-</div>
+    <div class="container nav">
+        <a class="logo" href="#">Hongxuan Chen</a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <main class="container">
-<div class="profile" id="about">
-<!-- To add a portrait, upload it as images/profile.jpg and replace this div with:
-<img class="profile-photo" src="images/profile.jpg" alt="Hongxuan Chen"> -->
-<div class="profile-placeholder">HC</div>
-<div>
-<h1>Hongxuan Chen</h1>
-<div class="position">Postdoctoral Researcher</div>
-<div class="affiliation">School of Data Science<br>The Chinese University of Hong Kong, Shenzhen<br>Shenzhen, Guangdong, China</div>
-<div class="social"><a href="mailto:hxuanchen@cuhk.edu.cn">Email</a><a href="https://github.com/hxuanchen">GitHub</a></div>
-</div>
-</div>
 
+    <!-- Profile photo: images/现代皮肤_裁剪_100k - 副本.jpg -->
+    <div class="profile" id="about">
+        <img
+            class="profile-photo"
+            src="images/%E7%8E%B0%E4%BB%A3%E7%9A%AE%E8%82%A4_%E8%A3%81%E5%89%AA_100k%20-%20%E5%89%AF%E6%9C%AC.jpg"
+            alt="Hongxuan Chen">
 
-<section>
-    <h2>Research Profile</h2>
+        <div>
+            <h1>Hongxuan Chen</h1>
+            <div class="position">Postdoctoral Researcher</div>
+            <div class="affiliation">
+                School of Data Science<br>
+                The Chinese University of Hong Kong, Shenzhen<br>
+                Shenzhen, Guangdong, China
+            </div>
+            <div class="social">
+                <a href="mailto:hxuanchen@cuhk.edu.cn">Email</a>
+                <a href="https://github.com/hxuanchen">GitHub</a>
+            </div>
+        </div>
+    </div>
 
-    <p>
-        I am a Postdoctoral Researcher at the School of Data Science,
-        The Chinese University of Hong Kong, Shenzhen, working with
-        Prof. Junfeng Wu. I received my Ph.D. in Naval Architecture and
-        Ocean Engineering from Huazhong University of Science and
-        Technology in 2026, under the supervision of Prof. Guoyuan Tang.
-    </p>
+    <section id="research-profile">
+        <h2>Research Profile</h2>
 
-    <p>
-        My research focuses on nonlinear and geometric control, guidance
-        and motion generation, and underactuated robotic systems, with a
-        particular emphasis on underwater vehicles. My work combines
-        theoretical analysis with experimental validation, resulting in
-        first-author publications in <em>Automatica</em>,
-        <em>Control Engineering Practice</em>, <em>Ocean Engineering</em>,
-        and <em>Measurement Science and Technology</em>.
-    </p>
+        <p>
+            I am a Postdoctoral Researcher at the School of Data Science,
+            The Chinese University of Hong Kong, Shenzhen, working with
+            Prof. Junfeng Wu. I received my Ph.D. in Naval Architecture and
+            Ocean Engineering from Huazhong University of Science and
+            Technology in 2026, under the supervision of Prof. Guoyuan Tang.
+        </p>
 
-<p>
-    A key contribution of my research is the development of
-    modular velocity guidance laws (VGLs) for three-dimensional
-    trajectory tracking of underactuated autonomous underwater
-    vehicles. VGLs bridge the desired trajectory and low-level
-    motion controllers by converting trajectory-tracking errors
-    into feasible velocity and orientation references. This
-    modular structure separates guidance from control, allowing
-    the same guidance framework to be integrated with different
-    low-level controllers for underactuated vehicles. The results were published on Automatica.
-</p>
-</section>
+        <p>
+            My research focuses on nonlinear and geometric control, guidance
+            and motion generation, and underactuated robotic systems, with a
+            particular emphasis on underwater vehicles. My work combines
+            theoretical analysis with experimental validation, resulting in
+            first-author publications in <em>Automatica</em>,
+            <em>Control Engineering Practice</em>, <em>Ocean Engineering</em>,
+            and <em>Measurement Science and Technology</em>.
+        </p>
 
+        <p>
+            A central contribution of my research is the development of
+            modular velocity guidance laws (VGLs) for 3-D trajectory tracking
+            of underactuated autonomous underwater vehicles. The VGL acts as
+            a guidance layer between a desired trajectory and a low-level
+            motion controller, converting trajectory-tracking errors into
+            feasible velocity and orientation references. By separating
+            guidance from low-level control, the same guidance framework can
+            be paired with different controllers, providing a reusable
+            solution for 3-D trajectory tracking without requiring direct
+            actuation in every translational direction.
+        </p>
 
-<section id="appointment">
-<h2>Academic Appointment</h2>
-<div class="entry">
-<h3>The Chinese University of Hong Kong, Shenzhen, China</h3>
-<div class="date">October 2026 – Present</div>
-<p>Postdoctoral Researcher, School of Data Science<br>Postdoctoral Advisor: Prof. Junfeng Wu</p>
-</div>
-</section>
+        <p>
+            My current research investigates capability-aware motion
+            generation and control for robotic systems under actuation
+            constraints and failures.
+        </p>
+    </section>
 
-<section id="education">
-<h2>Education</h2>
-<div class="entry">
-<h3>Huazhong University of Science and Technology</h3>
-<div class="date">September 2020 – September 2026</div>
-<p>Ph.D. in Naval Architecture and Ocean Engineering<br>Integrated Master–Ph.D. Program</p>
-<ul><li>Supervisor: Prof. Guoyuan Tang</li><li>Award: Doctoral National Scholarship</li></ul>
-</div>
-<div class="entry">
-<h3>Huazhong University of Science and Technology</h3>
-<div class="date">September 2016 – June 2020</div>
-<p>B.Eng. in Marine Engineering</p>
-</div>
-</section>
+    <section id="appointment">
+        <h2>Academic Appointment</h2>
+        <div class="entry">
+            <h3>The Chinese University of Hong Kong, Shenzhen, China</h3>
+            <div class="date">October 2026 – Present</div>
+            <p>
+                Postdoctoral Researcher, School of Data Science<br>
+                Postdoctoral Advisor: Prof. Junfeng Wu
+            </p>
+        </div>
+    </section>
 
-<section id="research">
-<h2>Research Interests</h2>
-<ul>
-<li>Nonlinear and geometric control of autonomous underwater vehicles</li>
-<li>Guidance and motion generation for underactuated robotic systems</li>
-<li>Fault-tolerant control under actuator failures and degradation</li>
-<li>Capability-aware motion generation under actuation constraints</li>
-</ul>
-</section>
+    <section id="education">
+        <h2>Education</h2>
 
+        <div class="entry">
+            <h3>Huazhong University of Science and Technology</h3>
+            <div class="date">September 2020 – September 2026</div>
+            <p>
+                Ph.D. in Naval Architecture and Ocean Engineering<br>
+                Integrated Master–Ph.D. Program
+            </p>
+            <ul>
+                <li>Supervisor: Prof. Guoyuan Tang</li>
+                <li>Award: Doctoral National Scholarship</li>
+            </ul>
+        </div>
 
-<section id="publications">
-    <h2>Publications</h2>
+        <div class="entry">
+            <h3>Huazhong University of Science and Technology</h3>
+            <div class="date">September 2016 – June 2020</div>
+            <p>B.Eng. in Marine Engineering</p>
+        </div>
+    </section>
 
-    <h3>Journal Publications</h3>
-    <p class="note">First-author journal articles.</p>
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Nonlinear and geometric control of autonomous underwater vehicles</li>
+            <li>Guidance and motion generation for underactuated robotic systems</li>
+            <li>Fault-tolerant control under actuator failures and degradation</li>
+            <li>Capability-aware motion generation under actuation constraints</li>
+        </ul>
+    </section>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Ye Z, Tang G, et al.
-        <a href="https://doi.org/10.1016/j.automatica.2026.113084" class="paper-title">
-            A novel velocity guidance law for 3-D trajectory tracking of underactuated autonomous underwater vehicles: theory, simulations and experiments.
-        </a>
-        <span class="pub-meta">
-            <em>Automatica</em>, 2026, 190, 113084. <strong>(Regular Paper)</strong>
-        </span>
-    </p>
+    <section id="publications">
+        <h2>Publications</h2>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Tang G, Xiao W, et al.
-        <span class="paper-title">
-            K∞ function-based robust sliding mode control for remotely operated vehicles: Theory, simulations, and experiments.
-        </span>
-        <span class="pub-meta">
-            <em>Control Engineering Practice</em>, 2025, 156, 106230.
-        </span>
-    </p>
+        <h3>Journal Publications</h3>
+        <p class="note">First-author journal articles.</p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Tang G, Wang S, et al.
-        <span class="paper-title">
-            Adaptive fixed-time backstepping control for three-dimensional trajectory tracking of underactuated autonomous underwater vehicles.
-        </span>
-        <span class="pub-meta">
-            <em>Ocean Engineering</em>, 2023, 275, 114109.
-        </span>
-    </p>
+        <p class="publication">
+            <strong>Chen H</strong>, Ye Z, Tang G, et al.
+            <a href="https://doi.org/10.1016/j.automatica.2026.113084" class="paper-title">
+                A novel velocity guidance law for 3-D trajectory tracking of underactuated autonomous underwater vehicles: theory, simulations and experiments.
+            </a>
+            <span class="pub-meta">
+                <em>Automatica</em>, 2026, 190, 113084. <strong>(Regular Paper)</strong>
+            </span>
+        </p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Tang G, Huang Y, et al.
-        <span class="paper-title">
-            Adaptive model-parameter-free nonsingular fixed-time sliding mode control for underwater cleaning vehicle.
-        </span>
-        <span class="pub-meta">
-            <em>Ocean Engineering</em>, 2022, 262, 112239.
-        </span>
-    </p>
+        <p class="publication">
+            <strong>Chen H</strong>, Tang G, Xiao W, et al.
+            <span class="paper-title">
+                K∞ function-based robust sliding mode control for remotely operated vehicles: Theory, simulations, and experiments.
+            </span>
+            <span class="pub-meta">
+                <em>Control Engineering Practice</em>, 2025, 156, 106230.
+            </span>
+        </p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Ye Z, Tang G, et al.
-        <a href="https://doi.org/10.1088/1361-6501/ae264d" class="paper-title">
-            NDO-SMC for trajectory tracking of AUVs with unmeasured states: experimental study.
-        </a>
-        <span class="pub-meta">
-            <em>Measurement Science and Technology</em>, 2026, 37(2), 026201.
-        </span>
-    </p>
+        <p class="publication">
+            <strong>Chen H</strong>, Tang G, Wang S, et al.
+            <span class="paper-title">
+                Adaptive fixed-time backstepping control for three-dimensional trajectory tracking of underactuated autonomous underwater vehicles.
+            </span>
+            <span class="pub-meta">
+                <em>Ocean Engineering</em>, 2023, 275, 114109.
+            </span>
+        </p>
 
-    <h3>Selected Conference Papers</h3>
+        <p class="publication">
+            <strong>Chen H</strong>, Tang G, Huang Y, et al.
+            <span class="paper-title">
+                Adaptive model-parameter-free nonsingular fixed-time sliding mode control for underwater cleaning vehicle.
+            </span>
+            <span class="pub-meta">
+                <em>Ocean Engineering</em>, 2022, 262, 112239.
+            </span>
+        </p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Ye Z, Tang G, et al.
-        <span class="paper-title">
-            Adaptive predefined performance control with application to autonomous underwater vehicles.
-        </span>
-        <span class="pub-meta">
-            16th IFAC Conference on Control Applications in Marine Systems, Robotics and Vehicles, 2025.
-        </span>
-    </p>
+        <p class="publication">
+            <strong>Chen H</strong>, Ye Z, Tang G, et al.
+            <a href="https://doi.org/10.1088/1361-6501/ae264d" class="paper-title">
+                NDO-SMC for trajectory tracking of AUVs with unmeasured states: experimental study.
+            </a>
+            <span class="pub-meta">
+                <em>Measurement Science and Technology</em>, 2026, 37(2), 026201.
+            </span>
+        </p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, Wang S, Xiao W, et al.
-        <span class="paper-title">
-            Design and control of control moment gyros based autonomous underwater vehicle.
-        </span>
-        <span class="pub-meta">
-            35th International Ocean and Polar Engineering Conference, 2025.
-        </span>
-    </p>
+        <h3>Selected Conference Papers</h3>
 
-    <h3>Manuscripts Under Review</h3>
+        <p class="publication">
+            <strong>Chen H</strong>, Ye Z, Tang G, et al.
+            <span class="paper-title">
+                Adaptive predefined performance control with application to autonomous underwater vehicles.
+            </span>
+            <span class="pub-meta">
+                16th IFAC Conference on Control Applications in Marine Systems, Robotics and Vehicles, 2025.
+            </span>
+        </p>
 
-    <p class="publication">
-        <strong>Chen H</strong>, et al.
-        <span class="paper-title">
-            Orientation-reconstruction-based velocity guidance for three-dimensional trajectory tracking of underactuated underwater vehicles under persistent mismatched disturbances: A modular framework.
-        </span>
-        <span class="pub-meta">
-            Submitted to <em>Automatica</em>, November 2026.
-        </span>
-    </p>
+        <p class="publication">
+            <strong>Chen H</strong>, Wang S, Xiao W, et al.
+            <span class="paper-title">
+                Design and control of control moment gyros based autonomous underwater vehicle.
+            </span>
+            <span class="pub-meta">
+                35th International Ocean and Polar Engineering Conference, 2025.
+            </span>
+        </p>
 
-</section>
+        <h3>Manuscript Submitted</h3>
 
+        <p class="publication">
+            <strong>Chen H</strong>, et al.
+            <span class="paper-title">
+                Orientation-reconstruction-based velocity guidance for three-dimensional trajectory tracking of underactuated underwater vehicles under persistent mismatched disturbances: A modular framework.
+            </span>
+            <span class="pub-meta">
+                Submitted to <em>Automatica</em>, November 2026.
+            </span>
+        </p>
+    </section>
 
-<section id="projects">
-<h2>Selected Research Projects</h2>
-<div class="project">
-<h3>Geometric Control Method of Underwater Vehicles Based on Control Moment Gyros</h3>
-<div class="date">National Natural Science Foundation of China | 2019–2023 | Completed</div>
-<p>Designed the mechanical structure and steering law of a control-moment-gyro-actuated AUV and developed its guidance and control algorithms. Built a prototype and conducted torque-output, angle-tracking, and trajectory-tracking experiments. Results were published in <em>Ocean Engineering</em> and presented at ISOPE.</p>
-</div>
-<div class="project">
-<h3>Development of Underwater Cleaning Robots for Deep-Sea Fishery Farms</h3>
-<div class="date">Industry Collaborative Project | 2019–2022 | Completed</div>
-<p>Participated in the development of an underwater cleaning robot and its automatic control algorithms. Designed a trajectory-tracking controller to address disturbances caused by high-pressure water jets, tether forces, and ocean currents, and investigated neural-network-based compensation for model uncertainties and disturbances. Results were published in <em>Ocean Engineering</em> and presented at IEEE OCEANS.</p>
-</div>
-<div class="project">
-<h3>Anti-Disturbance and High-Precision Control for Nuclear Underwater Vehicles</h3>
-<div class="date">Industrial Applied Research Foundation | 2023–2025 | Completed</div>
-<p>Developed disturbance-rejection control algorithms and constructed a 3-D experimental platform for underwater vehicles. Conducted experiments in a CNNC water tank using a NOKOV motion-capture system, achieving a reported dynamic accuracy of 0.05 m. The project also investigated fault-tolerant control under thruster failures in nuclear environments. Results included publications in <em>Control Engineering Practice</em>.</p>
-</div>
-</section>
+    <section id="projects">
+        <h2>Selected Research Projects</h2>
 
-<section id="services">
-<h2>Academic Services</h2>
-<p>Reviewer for <em>IEEE Transactions on Intelligent Transportation Systems</em>, <em>International Journal of Mechanical Sciences</em>, <em>Control Engineering Practice</em>, <em>Ocean Engineering</em>, and <em>ISA Transactions</em>.</p>
-</section>
+        <div class="project">
+            <h3>Geometric Control Method of Underwater Vehicles Based on Control Moment Gyros</h3>
+            <div class="date">National Natural Science Foundation of China | 2019–2023 | Completed</div>
+            <p>
+                Designed the mechanical structure and steering law of a
+                control-moment-gyro-actuated AUV and developed its guidance
+                and control algorithms. Built a prototype and conducted
+                torque-output, angle-tracking, and trajectory-tracking
+                experiments. Results were published in <em>Ocean Engineering</em>
+                and presented at ISOPE.
+            </p>
+        </div>
 
-<section id="contact">
-<h2>Contact</h2>
-<p><strong>Email:</strong> <a href="mailto:hxuanchen@cuhk.edu.cn">hxuanchen@cuhk.edu.cn</a></p>
-<p><strong>Address:</strong><br>School of Data Science,<br>The Chinese University of Hong Kong, Shenzhen,<br>Shenzhen, Guangdong 518172, China.</p>
-<p><strong>GitHub:</strong> <a href="https://github.com/hxuanchen">github.com/hxuanchen</a></p>
-</section>
+        <div class="project">
+            <h3>Development of Underwater Cleaning Robots for Deep-Sea Fishery Farms</h3>
+            <div class="date">Industry Collaborative Project | 2019–2022 | Completed</div>
+            <p>
+                Participated in the development of an underwater cleaning
+                robot and its automatic control algorithms. Designed a
+                trajectory-tracking controller to address disturbances
+                caused by high-pressure water jets, tether forces, and
+                ocean currents, and investigated neural-network-based
+                compensation for model uncertainties and disturbances.
+                Results were published in <em>Ocean Engineering</em>
+                and presented at IEEE OCEANS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Anti-Disturbance and High-Precision Control for Nuclear Underwater Vehicles</h3>
+            <div class="date">Industrial Applied Research Foundation | 2023–2025 | Completed</div>
+            <p>
+                Developed disturbance-rejection control algorithms and
+                constructed a 3-D experimental platform for underwater
+                vehicles. Conducted experiments in a CNNC water tank using
+                a NOKOV motion-capture system, achieving a reported dynamic
+                accuracy of 0.05 m. The project also investigated
+                fault-tolerant control under thruster failures in nuclear
+                environments. Results included publications in
+                <em>Control Engineering Practice</em>.
+            </p>
+        </div>
+    </section>
+
+    <section id="platforms">
+        <h2>Underwater Robotic Platforms</h2>
+        <p class="note">
+            Experimental platforms used in research on underwater vehicle
+            guidance, control, and fault-tolerant operation.
+        </p>
+
+        <div class="platform-grid">
+            <div class="platform-card">
+                <img src="images/1.png" alt="Cleaning robot, vertical configuration" loading="lazy">
+                <div class="platform-caption">Cleaning Robot (Vertical)</div>
+            </div>
+
+            <div class="platform-card">
+                <img src="images/2.png" alt="Cleaning robot, horizontal configuration" loading="lazy">
+                <div class="platform-caption">Cleaning Robot (Horizontal)</div>
+            </div>
+
+            <div class="platform-card">
+                <img src="images/3.png" alt="Control-moment-gyro-actuated underwater vehicle" loading="lazy">
+                <div class="platform-caption">CMG-actuated AUV</div>
+            </div>
+
+            <div class="platform-card">
+                <img src="images/4.png" alt="Hydrodynamic test platform" loading="lazy">
+                <div class="platform-caption">Hydrodynamic Test Platform</div>
+            </div>
+
+            <div class="platform-card">
+                <img src="images/5.png" alt="Underwater pool experiment" loading="lazy">
+                <div class="platform-caption">Pool Experiment</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Academic Services</h2>
+        <p>
+            Reviewer for <em>IEEE Transactions on Intelligent Transportation Systems</em>,
+            <em>International Journal of Mechanical Sciences</em>,
+            <em>Control Engineering Practice</em>, <em>Ocean Engineering</em>,
+            and <em>ISA Transactions</em>.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:hxuanchen@cuhk.edu.cn">hxuanchen@cuhk.edu.cn</a>
+        </p>
+        <p>
+            <strong>Address:</strong><br>
+            School of Data Science,<br>
+            The Chinese University of Hong Kong, Shenzhen,<br>
+            Shenzhen, Guangdong 518172, China.
+        </p>
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/hxuanchen">github.com/hxuanchen</a>
+        </p>
+    </section>
+
 </main>
 
 <footer>© 2026 Hongxuan Chen. All rights reserved.</footer>
