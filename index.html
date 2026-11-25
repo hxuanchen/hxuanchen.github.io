@@ -205,13 +205,13 @@ li {
 }
 
 .platform-card {
-    min-width: 0;
+    max-width: 280px;
 }
 
 .platform-card img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 180px;
     object-fit: contain;
     background: #f7f8fa;
     border: 1px solid var(--line);
@@ -551,11 +551,14 @@ footer {
             guidance, control, and fault-tolerant operation.
         </p>
 
-        <div class="platform-grid">
-                <img src="images/6.png" alt="Underwater pool experiment" loading="lazy">
-                <div class="platform-caption">Pool Experiment</div>
-            </div>
-        </div>
+      <div class="platform-grid">
+    <div class="platform-card">
+        <img src="images/6.png"
+             alt="Underwater pool experiment"
+             loading="lazy">
+        <div class="platform-caption">Pool Experiment</div>
+    </div>
+</div>
     </section>
 
     <section id="services">
